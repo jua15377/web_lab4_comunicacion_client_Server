@@ -1,0 +1,20 @@
+.showmessages{
+    width: 500px;
+      height: 500px;
+      background: yellow;
+    border-style: solid;
+    border-color: green;
+    border-width: 12px;
+    border-radius: 20px 20px;
+    overflow-y: scroll;
+  }
+  
+  .personalInfo{
+    width: 500px;
+      height: 100px;
+      background: yellow;
+    border-style: solid;
+    border-color: green;
+    border-width: 12px;
+    border-radius: 20px 20px;
+  }
