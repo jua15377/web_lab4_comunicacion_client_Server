@@ -39,7 +39,15 @@ function getMsj(){
     var li = document.createElement("li");
     li.appendChild(identificador)
     li.appendChild(document.createElement("br"))
-    li.appendChild(document.createTextNode(textToAdd))
+    if (textToAdd.endsWith(".jpeg")||textToAdd.endsWith(".jpg")||textToAdd.endsWith(".png")||textToAdd.endsWith(".gif")){
+      var img = document.createElement("img")
+      img.src = textToAdd
+      li.appendChild(img)
+    }
+    else{
+      li.appendChild(document.createTextNode(textToAdd))
+    }
+    
     ulMsj.appendChild(li)
   }
 
@@ -90,7 +98,8 @@ function getMsj(){
     })
   }
 
+
   setInterval(function() {
     // method to be executed;
     getMsj()
-  }, 1000);
+  }, 1500);
